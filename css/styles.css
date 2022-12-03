@@ -1,0 +1,686 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-image: url(https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* language button */
+
+.language {
+  position: absolute;
+  right: 70px;
+  top:50px;
+  border: 3px black solid;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  letter-spacing: .1em;
+  font-family: 'Montserrat'
+}
+
+.language:hover {
+  box-shadow: 3px 3px 3px rgba(1, 1, 1, 0.5);
+  background-color: black;
+  color: white;
+}
+
+.language:active {
+  box-shadow: 0px 0px 0px rgba(1, 1, 1, 0);
+  background-color: black;
+  color: white;
+}
+
+/* title */
+
+#title {
+  padding-bottom: 50px;
+  margin-bottom: 3px;
+}
+
+.beaute-cils {
+  display: none;
+  font-family: 'Dancing Script';
+  font-weight: 700;
+  font-size: 6rem;
+}
+.beaute {
+  display: inline;
+  position: relative;
+  bottom: 22px;
+  right: 5%;
+  font-family: 'Dancing Script';
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+.cils {
+  display: inline;
+  position: relative;
+  bottom: 22px;
+  left: 5%;
+  font-family: 'Dancing Script';
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+.eyelash-logo-container {
+  text-align: center;
+  margin: auto;
+  padding: 30px;
+}
+
+.eyelash-logo {
+  margin: 0;
+  display: inline;
+}
+
+/* navbar */
+
+/* hamberger menu */
+
+.topnav {
+  position: relative;
+  display: none;
+}
+
+#myLinks {
+  display: none;
+}
+
+#myLinks a {
+  display: block;
+  width: 374px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  letter-spacing: .3em;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  margin: 10px 30px;
+}
+
+.topnav .icon {
+  color: black;
+  font-size: 3rem;
+  padding:10px;
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: -150px;
+}
+
+.topnav .icon:hover {
+  color: rgba(200,80,150,0.5);
+}
+
+#myLinks a:hover {
+  border: black solid 1px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px rgba(1, 1, 1, 0.5);
+}
+
+/* regular size nav */
+.navbar{
+  text-align: center;
+}
+
+.navbar img {
+  width: 93px;
+  height: 30px;
+}
+
+.navbar li {
+  position: relative;
+  bottom: 20%;
+  list-style: none;
+  display: inline;
+}
+
+.btn {
+  font-family: 'Raleway';
+  font-weight: 100;
+  letter-spacing: .3em;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.btn:hover {
+  border: black solid 1px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px rgba(1, 1, 1, 0.5);
+  /* box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5); */
+}
+
+#cover-img {
+  position: relative;
+  background-image: url(images/eyelash-cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40rem;
+  box-shadow: 0 0 5px 5px rgba(1, 1, 1, 1);
+}
+
+#lash-extensions {
+  text-align: center;
+  padding: 30px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 10rem;
+}
+.lash-extenstions-info h1 {
+  font-family: 'Raleway';
+  font-weight: 400;
+  letter-spacing: .2em;
+  font-size: 3rem;
+}
+
+.lash-extenstions-info p {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  width: 70%;
+  margin: auto;
+}
+
+.lash-extenstions-imgs {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 3rem;
+
+}
+
+.lash-extenstions-imgs button {
+  background: none;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 2;
+  width: 15rem;
+  height: 5rem;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: white;
+  letter-spacing: .1em;
+  border-color: white;
+  border-style: solid;
+  border-radius: 3;
+}
+
+.lash-extenstions-imgs button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 3px 3px 3px rgba(1, 1, 1, 0.5);
+  cursor: pointer;
+}
+
+.lash-extenstions-imgs button:active {
+  box-shadow: 0px 0px 0px rgba(1, 1, 1, 0.5);
+}
+
+ .lash-extenstions-imgs h1 {
+  position: absolute;
+  margin: 0;
+  top: 70%;
+  left: 87px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: .2em;
+  color: white;
+}
+
+/* french page */
+.fr h1 {
+ position: absolute !important;
+ margin: 0 !important;
+ top: 72% !important;
+ font-family: 'Montserrat' !important;
+ font-weight: 400 !important;
+ font-size: 1.5rem !important;
+ letter-spacing: .2em !important;
+ color: white;
+}
+
+.classic-h1 {
+  left: 80px !important;
+}
+
+.volume-h1 {
+  left: 35px !important;
+}
+
+.refill-h1 {
+  left: 40px !important;
+}
+
+.classic {
+  position: relative;
+  top: 5rem;
+  background-image: url(images/classic.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40rem;
+  box-shadow: 0 0 4px 4px rgba(30, 30, 30, 1);
+}
+
+.volume {
+  position: relative;
+  top: 5rem;
+  background-image: url(images/volume.png);
+  background-size: cover;
+  background-position: 0 75%;
+  background-repeat: no-repeat;
+  height: 40rem;
+  box-shadow: 0 0 4px 4px rgba(30, 30, 30, 1);
+}
+
+.refill {
+  position: relative;
+  top: 5rem;
+  background-image: url(images/refill.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40rem;
+  box-shadow: 0 0 4px 4px rgba(30, 30, 30, 1);
+}
+
+#reviews {
+  position:relative;
+}
+.slideshow-container {
+  text-align: center;
+  padding: 50px 100px 0 100px;
+}
+
+.mySlides h2 {
+  font-size: 5rem;
+  margin-bottom: 70px;
+  margin-top: 0;
+}
+
+.mySlides p {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  width: 60%;
+  min-height: 180px;
+  margin: auto;
+}
+
+.mySlides h1 {
+  font-family: 'Raleway';
+  font-weight: 100;
+  font-size: 2rem;
+  letter-spacing: .1em;
+}
+
+.text {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  letter-spacing: .1em;
+}
+.numbertext {
+  text-align: left;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.dot:hover {
+  background-color: rgba(200,80,150,0.3);
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  left: 15%;
+  border-radius: 6px 0 0 6px;
+}
+
+.next {
+  right: 15%;
+  border-radius: 0 6px 6px 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(200,80,150,0.3);
+}
+
+#footer  {
+  text-align: center;
+  font-family: 'Raleway';
+  letter-spacing: .1em;
+  margin-top: 50px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  backdrop-filter: blur(1000px);
+}
+
+/* Follow us */
+.cta {
+  font-size: .9rem;
+  margin-bottom: 30px;
+}
+
+/* links */
+#footer a {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 5px;
+  color: black;
+}
+
+#footer a:hover {
+  font-size: 1.6rem;
+  color: rgba(200,80,150,0.5);
+}
+
+/* phone num */
+.number span {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  font-size: .85rem;
+}
+
+.number {
+  line-height: 2;
+  margin-top: 30px;
+  font-size: .9rem;
+}
+
+/* copyright */
+
+.copyright {
+  font-size: .8rem;
+  margin-top: 30px;
+}
+
+/* made by */
+
+.made-by {
+  font-size: .75rem;
+  margin-top: 25px;
+  color: grey;
+}
+
+
+/* Pricing page */
+
+#all-pricings {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.prev-page {
+  position: absolute;
+  font-size: 3rem;
+  color: black;
+  text-decoration: none;
+  left: 70px;
+  top: 50px;
+}
+#all-pricings h1,h2,h3 {
+  font-family: 'Raleway';
+  font-weight: 400;
+  letter-spacing: .1em;
+}
+
+.pricing {
+  width:80%;
+  margin: auto;
+  padding-bottom: 20px;
+  border: 2px black solid;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 4px rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(100px);
+}
+
+
+#all-pricings h2 {
+  border: 1px black solid;
+  border-radius: 6px;
+  margin-top:0;
+  padding: 20px;
+}
+
+#all-pricings h3 {
+  margin-top: 32px;
+  font-size: 1.3rem;
+}
+
+#all-pricings span {
+  font-family: 'Montserrat';
+}
+
+#all-pricings p {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+#all-pricings button {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  letter-spacing: .1em;
+  font-size: 1rem;
+  width: 80%;
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: rgba(200,80,150,0.1);
+  box-shadow: 0px 0px 4px 4px rgba(30, 30, 30, 0.5);
+  border-radius: 50px;
+}
+
+.pricing-containers {
+  display: inline-block;
+  width: 30%;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px black solid;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 4px rgba(30, 30, 30, 0.5);
+}
+
+.main-price {
+  font-size: 1.5rem ;
+}
+
+.pricing-containers li {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  margin: 50px;
+  list-style: none;
+}
+
+.pricing-title  {
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.removal {
+  font-size: 1.5rem;
+  margin-top: 62px;
+}
+
+hr {
+  border: 1px black solid;
+  border-top: 0px;
+}
+
+/* location */
+
+.google-map {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.positioning {
+  height: 950px;
+}
+
+.positioning h1 {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: .2em;
+  text-align: center;
+
+}
+
+@media (max-width: 1318px)  {
+  .language {
+    right: 2%;
+  }
+}
+
+/* @media (max-width: 1240px)  {
+  .language {
+    font-size: 1rem;
+    padding: 10px 15px;
+    top: 60px;
+    right: 2%;
+  }
+} */
+
+@media (max-width: 1230px) {
+  .lash-extenstions-imgs {
+    display: block;
+  }
+
+  .classic, .volume, .refill {
+    width: 70%;
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 1254px) {
+  .topnav {
+    display: block;
+  }
+
+  .navbar img {
+    display: none;
+  }
+
+  .navbar li {
+    display: none;
+  }
+}
+
+@media (max-width: 1145px) {
+  .beaute-cils {
+    text-align: center;
+    display: block;
+    margin: 5px;
+    font-family: 'Dancing Script';
+    font-weight: 700;
+    letter-spacing: .1em;
+    font-size: 6rem;
+  }
+
+  .beaute {
+    display: none;
+  }
+
+  .cils {
+    display: none;
+  }
+
+  .language {
+    top: 170px;
+  }
+
+  .topnav .icon {
+    color: black;
+    font-size: 3rem;
+    padding:10px;
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: -125px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .mySlides h2 {
+    font-size: 4rem;
+    margin-bottom: 70px;
+    margin-top: 0;
+  }
+
+  .mySlides p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 657px) {
+  .mySlides h2 {
+    font-size: 3rem;
+    margin-bottom: 70px;
+    margin-top: 0;
+  }
+
+  .mySlides p {4
+    width: 80%;
+    font-size: 1.4rem;
+  }
+}
+
+/* pricing page */
+
+@media (max-width: 1048px) {
+
+  .pricing-containers {
+    margin: 50px auto;
+    display: block;
+    width: 80%;
+    border: 2px black solid;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px rgba(30, 30, 30, 0.5);
+  }
+
+}
